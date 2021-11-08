@@ -1,0 +1,7 @@
+{% block content%}
+<form action="{% url 'profile' %}" method="POST">
+    {% csrf_token %}
+    {{cf.as_p}}
+    <input type="submit">
+</form>
+{% endblock %}
