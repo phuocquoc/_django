@@ -1,0 +1,21 @@
+{%extends 'main.html'%}
+{%block content %}
+
+{% load static %}
+<div class="auth">
+    <div class="card">
+        <div class="auth__header text-center">
+            <a href="{% url 'profiles' %}" class="header__logo">
+                <img src="{% static 'images/icon.svg' %}" alt="DevSearch
+                    Logo"
+                    />
+            </a>
+            <h3>Hello Developer, Welcome Back!</h3>
+        </div>
+        <center>
+            <a href="{% url 'loginoutUser' %}" class="btn btn--sub btn--lg">Logout</a>
+        </center>
+    </div>
+</div>
+
+{%endblock content%}
